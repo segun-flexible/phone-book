@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #642B73;
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  
+    background: linear-gradient(to right, #C6426E, #642B73);
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper{
+    
+    width: 100%;
+    padding: 10px;
+
+}
+
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header .brand {
+    font-size: 25px;
+    color: #fff;
+    font-family: monospace;
+}
+
+.header .option {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.header .option span {
+    padding: 10px;
+}
+.header .option span .fa {
+    font-size: 19px;
+    color: #fff;
+}
+
+.header .search {
+    position: relative;
+}
+
+.header .search input {
+    max-width: 300px;
+    min-width: 250px;
+    outline: 0;
+    height: 25px;
+
+}
+
+.header .search .btn_search {
+    padding: 4.5px 6px;
+    background: #b91e51;
+    outline: none;
+    border: 0;
+    box-shadow: 0px 0px 5px 1px;
+    color: #fff;
+}
+
+/* Hide Input */
+input[type="radio"] {
+    display: none;
+}
+
+.phonelistwrapper {
+    position: relative;
+}
+
+.phoneHeadTitle {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.phoneHeadTitle label {
+    position: relative;
+    font-size: 18px;
+    font-family: monospace;
+    color: #fff;
+}
+
+.after{
+    position: relative;
+}
+.after:after {
+    content: "";
+    position: absolute;
+    left: 19px;
+    bottom: -2px;
+    width: 70px;
+    height: 4px;
+    background: #901c42;
+}
+
+.fav{
+    display: none;
+}
+
+.phone_list {
+    position: relative;
+    padding: 0 20px;
+}
+
+.phone_list ul {
+    position: relative;
+}
+
+.phone_list li {
+    list-style: none;
+    font-size: 18px;
+    color: #efdae1;
+    font-weight: bold;
+    font-family: monospace;
+    border-bottom: 1.5px solid;
+    padding: 13px 0;
+}
+.phone_list li:last-child {
+    border: 0;
+}
+.phone_list span.number {
+    color: #4f4552;
+    font-size: 15px;
+}
+
+.phone_list .option-c {
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+span.c_option.delete:hover {
+    color: rgba(48, 2, 250, 0.342);
+    
+}
+
+span.c_option.edit:hover {
+    color: rgb(54, 71, 31);
+   
+}
+
+span.c_option.add_to_fav:hover {
+    color: red;
+
+}
+
+.add-new{
+background: #333;
+    position: fixed;
+    z-index: 999999999;
+    bottom: 87px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+/*     opacity: 0;
+ */    border: none;
+    transition: all .4s;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    height: 100%;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+.footer .fa {
+    color: red;
+    padding: 0 10px;
+}
+
+.textbox , .editbox{
+    position: fixed;
+    background: rgba(20,20,20,0.9);
+    padding: 50px;
+    color: #fff;
+    flex-direction: column;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox span , .editbox span{
+    position: relative;
+}
+.textbox span .fa, .editbox span .fa {
+    position: absolute;
+    right: -123px;
+    top: -32px;
+}
+
+
+.textbox h5 , .editbox h5{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.textbox input, .editbox input {
+    width: 100%;
+    height: 31px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.textbox .save, .editbox .edit{
+    padding: 7px;
+    width: 100%;
+    font-size: 17px;
+    transition: .4s all cubic-bezier(0.43, 0.71, 0, 1.81);;
+}
+
+.textbox button:hover, .editbox button:hover {
+    background: #9c1a45;
+    outline: 0;
+    border: 0;
+    padding: 9px;
+    color: #fff;
+}
+.messageWrap {
+    position: fixed;
+    top: 0;
+    display: none;
+    font-size: 17px;
+    transition: 0.5s all ease-in;
+    font-family: monospace;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Addons */
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.like{
+color: red;
+}
+
+
+.clearMessage{
+display: block;
+
+}

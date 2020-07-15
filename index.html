@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="messageWrap" style="z-index: 99;">
+
+</div>
+
+<div class="wrapper">
+
+
+
+<div class="header">
+<div class="brand">Phone Book</div>
+
+<!--Options-->
+<div class="option">
+<span title="Trash All Contacts"><i class="fa fa-eraser"></i></span>
+<span title="Recover All Contacts"><i class="fa fa-trash"></i></span>
+<span title="Exports To CVS"><i class="fa fa-external-link"></i></span>
+
+</div>
+<!--Options End-->
+<div class="search"><input type="search" class="search box"> <button class="btn_search"> Search</button></div> 
+</div>
+
+<!--Phone Book List-->
+<div class="phonelistwrapper">
+<div class="phoneHeadTitle">
+<label class="after" for="all">All Contact</label>
+<label for="fav">Favourite</label>
+</div>
+
+<input type="radio" name="tabs" id="all" checked>
+<input type="radio" name="tabs" id="fav">
+
+<div id="all" class="phone_list all">
+<ul>
+<!--Populated In JS-->
+</ul>
+</div>
+
+<div id="fav" class="phone_list fav">
+<ul>
+
+</ul>
+</div>
+
+<!--Phone Book List End-->
+</div>
+
+<div class="add-new" title="Add New"><i class="fa fa-plus"></i></div>
+
+
+
+<!--Footer-->
+<div class="footer">Build With <i class="fa fa-heart"></i> & <i class="fa fa-coffee"></i> By Segun Flexible</div>
+<!--Footer-->
+
+
+
+<!--Wrapper End-->
+</div>
+
+
+
+<div class="textbox" style="display: none;">
+<span><i class="fa fa-times"></i></span>
+<h5>Add New Post</h5>
+<input type="text" class="name" placeholder="Name">
+<input type="number" class="number" placeholder="Phone Number">
+<br>
+<button class="save">Save</button>
+</div>
+
+
+<div class="editbox" style="display: none;">
+<span><i class="fa fa-times"></i></span>
+<h5>Edit Contact</h5>
+<input type="text" class="name" placeholder="Name">
+<input type="number" class="number" placeholder="Phone Number">
+<br>
+<button class="edit">Save Edit</button>
+</div>
+
+
+<!--Container End-->
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
